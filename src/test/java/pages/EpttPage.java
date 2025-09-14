@@ -1,4 +1,3 @@
-
 package pages;
 
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
@@ -17,5 +16,23 @@ public class EpttPage {
     @FindBy(xpath = "//*[@text='Giriş Yap']")
     public WebElement GirisYapButton;
 
+
+    @FindBy(id="com.pttem.epttavm:id/buttonBack")
+    public WebElement geriOkButton;
+
+    @FindBy(id="com.pttem.epttavm:id/categories")
+    public WebElement  kategorilerButton;
+
+    @FindBy(xpath = "//*[@text='Sırala']")
+    public WebElement siralaButton;
+
+    @FindBy(xpath = "//*[@text='Azalan Fiyat']")
+    public WebElement AzalanFiyatText;
+
+    @FindBy(xpath = "(//*[@resource-id='com.pttem.epttavm:id/textViewProductPrice'])[1]")
+    public WebElement AzalanEnYuksekFiyat;
+
+    @FindBy(xpath = "(//*[@resource-id='com.pttem.epttavm:id/textViewProductPrice'])[1]")
+    public WebElement AzalanDusukFiyat;
 
 }
